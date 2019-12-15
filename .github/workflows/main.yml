@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: jekyll/builder:latest
+    - uses: jekyll/builder
     - name: Run a one-line script
       run: jekyll
     - name: Run a multi-line script
