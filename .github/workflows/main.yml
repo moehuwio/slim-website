@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     container: jekyll/builder:latest
     steps:
-      - run: jekyll new
+      - run: jekyll new .
         name: Run a one-line script
