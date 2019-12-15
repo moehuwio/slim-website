@@ -10,9 +10,9 @@ jobs:
     steps:
     - uses: docker://jekyll/builder:latest
     - name: Run a one-line script      
-    - run: |
-     pwd
-     ls 
+      run: |
+         pwd
+         ls 
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
