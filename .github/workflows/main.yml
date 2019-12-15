@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: docker://jekyll/builder:latest 
     - name: Run a one-line script
+    - uses: docker://jekyll/builder:latest 
       run: jekyll
     - name: Run a multi-line script
       run: |
