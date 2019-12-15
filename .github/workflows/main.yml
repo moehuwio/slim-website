@@ -4,11 +4,8 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     container: jekyll/builder:latest
     steps:
-      - run: |
-             jekyll
-	     pwd
-        name: Run a one-line script      
+      - run: jekyll
+        name: Run a one-line script
