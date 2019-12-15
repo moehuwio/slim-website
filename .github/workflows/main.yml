@@ -6,9 +6,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    container: jekyll/builder:latest
     steps:
-    - uses: docker://jekyll/builder:latest
     - name: Run a one-line script      
-      run: ls /usr/bin/
+      run: |
+          jekyll
+	  pwd
 
