@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container: jekyll/builder:latest
     steps:
-    - name: Run a one-line script      
-      run: |
-          jekyll
-	  pwd
-
+      - run: |
+             jekyll
+	     pwd
+        name: Run a one-line script      
