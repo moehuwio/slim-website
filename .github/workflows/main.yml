@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Run a one-line script
-      uses: docker://jekyll/builder:latest 
+      uses: docker://jekyll/builder:latest -v
     - run: jekyll	
     - name: Run a multi-line script
       run: |
