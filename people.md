@@ -4,18 +4,25 @@ title: People
 permalink: /people/
 ---
 
-## Current members ##
-{% assign groups = "group leader, postdocs" | split: ", " %}
+## Current Members ##
+{% assign groups = "group leader, postdocs, PhD students" | split: ", " %}
 {% for group in groups %}
-{% assign postdocs = site.current_members | where: "group", group %}
-<h3> {{group}} </h3>
-<ul>
-{% for person in postdocs %}
-  <li>{{ person.name }}</li>
-  
-  </ul>
+{% assign people = site.current_members | where: "group", group %}
+<br>
+### {{group}} 
+{% for person in people %}
+
+<div style="overflow:hidden">
+
+<img src="{{person.photo}}" style="width:80pt" align="left"/>
+<p>{{person.name}}</p>
+{% if person.website %}
+<a href="{{person.website}}">website</a>
+{% endif%}
+
+</div>
+
 {% endfor %}
 {% endfor %}
 
-
-
+<img src="{{person.photo}}" style="width:80pt;padding-right:12pt" align="left">
