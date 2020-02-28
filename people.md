@@ -5,7 +5,7 @@ permalink: /people/
 ---
 
 ## Current Members ##
-{% assign groups = "group leader, postdocs, PhD students" | split: ", " %}
+{% assign groups = "Group Leader, Postdocs, PhD Students" | split: ", " %}
 {% for group in groups %}
 {% assign people = site.current_members | where: "group", group %}
 <br>
