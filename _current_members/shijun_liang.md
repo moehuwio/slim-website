@@ -1,6 +1,6 @@
 ---
 name: Shijun Liang
-group: PhD students
+group: PhD Students
 photo: 
 ---
 
