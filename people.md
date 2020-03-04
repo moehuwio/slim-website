@@ -14,15 +14,14 @@ permalink: /people/
 
 <div style="overflow:hidden">
 
-<img src="{{person.photo}}" style="width:80pt" align="left"/>
-<p>{{person.name}}</p>
+<img src="{{person.photo}}" style="width:80pt;padding-right:6pt" align="left"/>
+<p>{{person.name}}<br>
 {% if person.website %}
 <a href="{{person.website}}">website</a>
 {% endif%}
+</p>
 
 </div>
 
 {% endfor %}
 {% endfor %}
-
-<img src="{{person.photo}}" style="width:80pt;padding-right:12pt" align="left">
