@@ -17,7 +17,11 @@ permalink: /people/
 <img src="{{person.photo}}" style="width:80pt;padding-right:6pt" align="left"/>
 <p>{{person.name}}<br>
 {% if person.website %}
-<a href="{{person.website}}">website</a>
+<a href="{{person.website}}">website</a><br>
+{% endif%}
+
+{% if person.bio %}
+{{person.bio}}
 {% endif%}
 </p>
 </div> 
